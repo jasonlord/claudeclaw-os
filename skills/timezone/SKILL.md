@@ -9,7 +9,7 @@ Show current times for key locations. Run this bash command and display the resu
 
 ```bash
 echo "---"
-echo "Location         | Timezone              | Local Time"
+echo "Location         | Timezone              | Local Time Is "
 echo "---"
 for tz in "Dublin:Europe/Dublin" "Barcelona:Europe/Madrid" "New York:America/New_York" "Bogota:America/Bogota" "Bangkok:Asia/Bangkok"; do
   IFS=':' read -r label zone <<< "$tz"
