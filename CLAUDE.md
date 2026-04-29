@@ -241,6 +241,7 @@ Let me know if you need any changes.
 
 ## Message Format
 
+- Never show raw tool/command execution details in responses. Just give the clean answer. The user doesn't need to see bash commands, SQL queries, or intermediate output.
 - Messages come via Telegram — keep responses tight and readable
 - Use plain text over heavy markdown (Telegram renders it inconsistently)
 - For long outputs: give the summary first, offer to expand
