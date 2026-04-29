@@ -11,7 +11,7 @@ Show current times for key locations. Run this bash command and display the resu
 echo "---"
 echo "Location         | Timezone              | Local Time"
 echo "---"
-for tz in "New York:America/New_York" "London:Europe/London" "Dubai:Asia/Dubai" "Tokyo:Asia/Tokyo" "Sydney:Australia/Sydney"; do
+for tz in "Dublin:Europe/Dublin" "Barcelona:Europe/Madrid" "New York:America/New_York" "Bogota:America/Bogota" "Bangkok:Asia/Bangkok"; do
   IFS=':' read -r label zone <<< "$tz"
   time=$(TZ="$zone" date +"%I:%M %p (%a)")
   printf "%-16s | %-21s | %s\n" "$label" "$zone" "$time"
