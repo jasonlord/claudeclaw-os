@@ -6,7 +6,7 @@
   <string>com.claudeclaw.research</string>
   <key>ProgramArguments</key>
   <array>
-    <string>__NODE_PATH__</string>
+    <string>/usr/local/Cellar/node/25.8.2/bin/node</string>
     <string>dist/index.js</string>
     <string>--agent</string>
     <string>research</string>
@@ -15,8 +15,10 @@
   <string>__PROJECT_DIR__</string>
   <key>EnvironmentVariables</key>
   <dict>
+    <key>NODE_ENV</key>
+    <string>production</string>
     <key>PATH</key>
-    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <string>/usr/local/Cellar/node/25.8.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
     <key>HOME</key>
     <string>__HOME__</string>
   </dict>
